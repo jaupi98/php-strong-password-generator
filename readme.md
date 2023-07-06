@@ -8,5 +8,15 @@ Milestone 1 Creare un form che invii in GET la lunghezza della password. Una nos
     3.3 verifico il valore inserito
     3.4 ? SE non rispecchia i criteri (stringa vuota o lunghezza non compresa tra alcuni valori) valorizza la variabile contenente  il messagio di errore 
     3.5 : ALTRIMENTI genero la password 
-    3.5.1 -
+    3.5.1 -genero un numero randomico compreso tra 0 e la lunghezza della stringa  -1 attrvesro una funzione
+    3.5.2 recupero il carattere della stringa corispondente alla posizione generata nel punto precedente
+    3.5.3 concateno la stringa 
+    3.5.4 ? SE la stringa ha la lunghezza inseita allora restituisco la password
+    3.5.5 ALTRIMENTI continuo a svolgere le operazioni precedenti
 4-restituisca la pasword nella pagina 
+
+Milestone 2 Verificato il corretto funzionamento del nostro codice, spostiamo la logica in un file functions.php che includeremo poi nella pagina principale
+
+1-creare il file funcion.php 
+2 metterci dentro la definizione di funzioni create
+3 importo il file creato in index.php
