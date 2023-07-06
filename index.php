@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__.'/funcion.php';
+include __DIR__.'/functions.php';
 
 
 if(isset($_GET['length'])){

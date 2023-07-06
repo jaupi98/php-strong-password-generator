@@ -20,3 +20,11 @@ Milestone 2 Verificato il corretto funzionamento del nostro codice, spostiamo la
 1-creare il file funcion.php 
 2 metterci dentro la definizione di funzioni create
 3 importo il file creato in index.php
+
+Milestone 3 (BONUS) Invece di visualizzare la password nella index, effettuare un redirect ad una pagina dedicata che tramite $_SESSION recupererà la password da mostrare all’utente.
+
+1-Creare la pagina success.php 
+2-iniziare la sessione nel file funcion.php , valorizare la variabile $_SESSION ed effetuare il redirect alla nuova pagina 
+3-Nella nuova pagina controlare se la variabile di sessione e'valorizata 
+    3.1 - ? SE e'valorizzata allora  stampo la password
+    3.3 - ALTRIMENTI faccio il redirect alla index mostrando un messagio di impossibilita adaccedere alla pagina

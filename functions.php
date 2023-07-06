@@ -8,7 +8,7 @@ function randomNumber($min,$max){
 //FUNZIONE CHE GENERA LA PASSWORD
 
 function generatePassword($length){
-    $result = ''; //VARIABILE CONTENETE I MESSAGI DI ERRORE
+    $result = ''; //VARIABILE CONTENETE LA PASWORD O I MESSAGI VIENE RISTITUITO IL VALORE FUORI DALLA FUNZIONE 
     $password = ''; //VARIABILE CONTENTE LA PASSWORD GENERATA
     $numbers ='0123456789';
     $letters ='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY';
@@ -32,7 +32,11 @@ function generatePassword($length){
 
             // var_dump($password);
         }
-        return $password;
+        // $result = $password;
+        session_start();
+        $_SESSION['password'] = $password;
+        header('Location: ./success.php');
+
     }
     return $result;
 
